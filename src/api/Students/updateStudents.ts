@@ -8,7 +8,6 @@ import Student from '../../database/models/students';
  * @apiName PutStudent
  * @apiGroup Students
  *
- * @apiParam {Number} id              Students unique ID.
  * @apiParam {String} [firstname]     Firstname of the Student.
  * @apiParam {String} [lastname]      Lastname of the Student.
  * @apiParam {Number} [progressId]    Progress of the Student.

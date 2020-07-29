@@ -26,7 +26,7 @@ import Student from '../../database/models/students';
  * @apiError StudentNotFound The id of the Student was not found.
  *
  * @apiErrorExample Error-Response:
- *     HTTP/1.1 404 Not Found
+ *     HTTP/1.1 500 Internal Server Error
  *     {
  *       "status": "Error",
  *       "message": "Сannot add student"
@@ -42,7 +42,7 @@ export const updateStudent = (req: Request, res: Response): void => {
       res.json(student);
     } else {
       console.error('Error: student id not found');
-      res.status(404).json({ status: 'Error', message: 'Сannot add student' });
+      res.status(500).json({ status: 'Error', message: 'Сannot add student' });
     }
   }).catch((err) => {
     console.error(err);

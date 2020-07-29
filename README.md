@@ -8,7 +8,6 @@
   - Models
   - Seeders
 - Documentation
-  - Swagger
   - Apidoc
 
 ### Install
@@ -39,13 +38,11 @@ sequelize-cli db:seed:all
 ```
 npm install apidoc -g
 apidoc -i .\src\ -o .\public\apidoc
-apidoc-swagger -i .\src\ -o .\public\swagger
 ```
 
 ### Public DOCS 
 ```sh
 http://127.0.0.1:8090/apidoc    # apidoc
-http://127.0.0.1:8090/swagger   # swagger
 ```
 ### Start server
 ```
