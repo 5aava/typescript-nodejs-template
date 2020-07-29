@@ -10,18 +10,8 @@ import addStudents from './api/Students/addStudents';
 import updateStudents from './api/Students/updateStudents';
 import deleteStudents from './api/Students/deleteStudents';
 
-import swaggerUi from 'swagger-ui-express';
-import swaggerDocument from '../public/swagger/swagger.json';
-
 
 const router = express.Router();
-
-// cors
-
-
-// swagger
-router.use('/swagger', swaggerUi.serve);
-router.get('/swagger', swaggerUi.setup(swaggerDocument));
 
 
 // students
